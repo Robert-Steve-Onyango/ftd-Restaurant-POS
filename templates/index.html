@@ -1,0 +1,59 @@
+<!-- filepath: c:\Data Science Course\Developer\Foster the Data\Restaurant POS\templates\index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant POS</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Restaurant Name
+    </header>
+    <main class="container">
+        <section class="table">
+            <h2>Table</h2>
+            <div id="table-sidebar">
+                <div class="tables">
+                    <button class="table-btn available" data-table-id="1">Table 1</button>
+                    <button class="table-btn available" data-table-id="2">Table 2</button>
+                    <button class="table-btn available" data-table-id="3">Table 3</button>
+                    <button class="table-btn available" data-table-id="4">Table 4</button>
+                    <button class="table-btn available" data-table-id="5">Table 5</button>
+                    <button class="table-btn available" data-table-id="6">Table 6</button>
+                    <button class="table-btn available" data-table-id="7">Table 7</button>
+                    <button class="table-btn available" data-table-id="8">Table 8</button>
+                    <button class="table-btn available" data-table-id="9">Table 9</button>
+                    <button class="table-btn available" data-table-id="10">Table 10</button>
+                    <button class="table-btn available" data-table-id="11">Table 11</button>
+                    <button class="table-btn available" data-table-id="12">Table 12</button>
+                    <button class="table-btn available" data-table-id="13">Table 13</button>
+                    <button class="table-btn available" data-table-id="14">Table 14</button>
+                    <button class="table-btn available" data-table-id="15">Table 15</button>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div id="menu-sidebar">
+                <div id="menu-container">
+                    <!-- Menu items will be loaded here dynamically -->
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <h2>Order</h2>
+            <div class="order-content">
+                <!-- Order details will be dynamically populated here -->
+            </div>
+            <div class="button-container">
+                <button id="bill-btn">BILL</button>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
