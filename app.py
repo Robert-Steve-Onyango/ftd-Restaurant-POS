@@ -2,8 +2,13 @@ from flask import Flask, request, jsonify, render_template
 import psycopg2
 import os
 from menu_utils import get_menu_items, get_menu_file_for_restaurant
+from dotenv import load_dotenv
+from flask_vercel import Vercel
+
+load_dotenv()
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
+app = Vercel(app)
 
 # Example Postgres connection (update with your credentials)
 def get_db_connection():
