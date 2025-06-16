@@ -90,10 +90,13 @@ header {
 }
 
 .menu-item img {
-    width: 100%; /* Make images responsive */
-    height: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 5px;
     transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+    display: block;
+    margin: 0 auto 8px auto;
 }
 
 .menu-item p {
@@ -334,7 +337,7 @@ header {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 10px
+    margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth hover transition */
 }
